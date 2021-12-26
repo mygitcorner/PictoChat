@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quick Servlet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form id="nickname-form">
+        Nickname:
+        <input id="nickname-field" name="nickname" type="text" maxlength="9">
+        <input id="nickname-btn" type="submit" value="Submit">
+    </form>
+    
+    <table id="msg-section">
+        <tr>
+            <td id="content">
+                
+                <div id="user-list-panel" class="panel">
+                    <table id="user-list-table">
+                        <thead>
+                            <th>Users:</th>
+                        </thead>
+                    </table>
+                </div>
+
+                <div id="msg-panel" class="panel">
+                    <table id="msg-table">
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <form id="msg-form">
+                    <label id="nickname-label" for="message"></label>
+                    <input id="draw-btn" type="button" value="Draw">
+                    <span><input id="input-box" name="message" type="text"></span>
+                </form>
+            </td>
+        </tr>
+
+        <!--
+        <br>
+        <p>Type \list to get a list of all channels</p>
+        <p>Type \join &lt;channel&gt; to join a channel or create one if it doesn't exist</p>
+        <p>Type \part to leave the channel you are in</p>
+        <p>Type \oper &lt;password&gt; to obtain operator privileges</p>
+        <p>Type \kick &lt;nickname&gt; to remove other users from the channel (op-only)</p>
+        <p>Type \connect &lt;host&gt; to connect to a server</p>
+        <p>Use up/down arrow keys to navigate between previous messages</p>
+        <p>Use tab to auto-complete names</p>-->
+    </table>
+
+    <script src="client.js"></script>
+</body>
+
+</html>
